@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blinkit Job Application</title>
+</head>
+<body>
+    <form action="/submit-application" method="post">
+        <h1>Blinkit Job Application</h1>
+
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+        <br><br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+        <br><br>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="10-digit mobile number" pattern="[0-9]{10}" required>
+        <br><br>
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+
+        <label for="resume">Upload Resume</label>
+        <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx" required>
+        <br><br>
+
+        <label for="position">Position Applied For</label>
+        <select name="position" id="position" required>
+            <option value="delivery_executive">Delivery Executive</option>
+            <option value="warehouse_manager">Warehouse Manager</option>
+            <option value="software_engineer">Software Engineer</option>
+            <option value="customer_support">Customer Support</option>
+        </select>
+        <br><br>
+
+        <label for="location">Preferred Location</label>
+        <input type="text" id="location" name="location" placeholder="Enter your city" required>
+        <br><br>
+
+        <label for="gender">Gender</label>
+        <br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+        <br><br>
+
+        <label for="experience">Years of Experience</label>
+        <input type="number" id="experience" name="experience" placeholder="Enter years of experience" min="0" required>
+        <br><br>
+
+        <label for="linkedin">LinkedIn Profile</label>
+        <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/your-profile">
+        <br><br>
+
+        <label for="comments">Additional Information</label>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Share any additional details or qualifications"></textarea>
+        <br><br>
+
+        <button type="submit">Submit Application</button>
+    </form>
+</body>
+</html>
