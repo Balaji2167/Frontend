@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design with Media Queries</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: skyblue;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: red;
+            background-color: greenyellow;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
+        }
+
+        p {
+            font-size: 1.25rem;
+            color: blue;
+            background-color: violet;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+                background-color: green;
+                padding: 15px;
+            }
+
+            p {
+                font-size: 1.125rem;
+                background-color: peachpuff;
+                padding: 15px;
+            }
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem;
+                background-color: violet;
+                padding: 20px;
+            }
+
+            p {
+                font-size: 1rem;
+                background-color: darkblue;
+                padding: 20px;
+            }
+        }
+
+        /* Media Query for screen sizes up to 360px */
+        @media (max-width: 360px) {
+            h1 {
+                font-size: 1.5rem;
+                text-align: center;
+                background-color: orange;
+                padding: 25px;
+            }
+
+            p {
+                font-size: 0.875rem;
+                text-align: center;
+                background-color: pink;
+                padding: 25px;
+            }
+        }
+        @media (min-width: 768px) {
+            body {
+                background-color: blue;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Random Thoughts: The Future of Technology</h1>
+    <p>In a world where AI continues to evolve, the next decade promises unimaginable advancements. We're just getting started.</p>
+</body>
+</html>
